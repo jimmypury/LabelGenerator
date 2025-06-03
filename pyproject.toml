@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "LabelGenerator"
+version = "0.1.0"
+description = "一个用于生成PDF格式标签的工具"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+keywords = ["label", "pdf", "barcode", "qrcode"]
+authors = [
+    {name = "Jimmy Ho", email = "jimmyhochina@outlook.com"}
+]
+maintainers = [
+    {name = "Jimmy Ho", email = "jimmyhochina@outlook.com"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Printing",
+    "Topic :: Multimedia :: Graphics",
+]
+dependencies = [
+    "reportlab>=3.5.0",
+    "qrcode>=6.1",
+    "pillow>=8.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jimmypury/labelgenerator"
+"Bug Tracker" = "https://github.com/jimmypury/labelgenerator/issues"
+"Documentation" = "https://github.com/jimmypury/labelgenerator#readme"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
